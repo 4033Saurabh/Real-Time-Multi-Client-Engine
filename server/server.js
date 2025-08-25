@@ -5,7 +5,14 @@ const redis = require('redis');
 // ---------------------------
 // Redis setup
 // ---------------------------
-const redisClient = redis.createClient();
+// const redisClient = redis.createClient();
+const redisClient = createClient({
+  socket: {
+    host: process.env.HOST,
+    port: process.env.PORT
+  }
+});
+
 redisClient.on('error', (err) => console.error('Redis error:', err));
 
 redisClient.connect().then(async () => {
