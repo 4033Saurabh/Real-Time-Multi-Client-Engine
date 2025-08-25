@@ -168,7 +168,7 @@
 
 
 // Optimized client script with better latency handling
-const ws = new WebSocket('ws://real-time-multi-client-engine.onrender.com:8080');
+const ws = new WebSocket('wss://real-time-multi-client-engine.onrender.com:8080');
 
 // Game state
 let playerId = null;
