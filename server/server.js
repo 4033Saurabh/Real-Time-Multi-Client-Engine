@@ -8,7 +8,7 @@ const redis = require('redis');
 // const redisClient = redis.createClient();
 
 const redisClient = redis.createClient({
-  url: "redis://red-d2mb96ffte5s73d1ibq0:6379",
+  url: "rediss://red-d2mb96ffte5s73d1ibq0:2ZNaX3DcDDEGUGUpxG2aW30Lfbm1fIlY@oregon-keyvalue.render.com:6379",
 });
 
 
